@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*font-family: 'Oleo Script Swash Caps', cursive;
+font-family: 'Playfair Display', serif;*/
+
+:root {
+ 
+  --brand-red: hsl(0, 87%, 17%);
+  --brand-grey: hsl(0, 0%, 18%);
+  --grad-back: linear-gradient(68.15deg, var(--brand-grey), var(--brand-red));
+
+  --nav-height: 7.2rem;
+
+  font-size: 62.5%; /* 1rem = 10px */
+/*width: 62.5%; */
+}
+
+/*========Geral==========*/
+
+body {
+  background: var(--grad-back);
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+  width: min(112rem, 100%);
+  display: grid;
+
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+
+  margin-bottom: 1rem;
+}
+
+/*========Menu==========*/
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8rem;
+  gap: 3.2rem;
+}
+
+.buttons-op {
+  font-family: 'Playfair Display', serif;;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 700;
+}
+
+/*========Conteudo==========*/
+#home .wrapper {
+  border-top: 0.15rem solid white;
+  border-bottom: 0.15rem solid white;
+  grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      'A B'
+      'C C';
+  align-items: center;  
+  justify-items: center;
+
+  padding-bottom: .5rem;
+}
+
+.col-a {
+  width: 40rem;
+  grid-area: A;
+  justify-self: center;
+}
+
+#home h1 {
+  color: white;
+  font-size: 3.1rem;
+}
+
+#home h2 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 1.8rem;
+  opacity: .9;
+  margin-block: 2.5rem;
+  line-height: 2.5rem;
+}
+
+#home .button {
+  border: 2px solid white;
+  border-radius: 4rem;
+  padding: .9rem 4rem;
+
+  color: white;
+  
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#home .button:hover {
+  color: var(--grad-back);
+  background-color: white;
+  opacity: .8;
+}
+
+.col-b {
+  grid-area: B;
+  padding-block: 5rem;
+}
+
+.col-b img {
+  width: 20rem;
+  border-radius: 10rem;
+}
+
+/*========Planejamento==========*/
+
+.col-c {
+  grid-area: C;
+
+  color: white;
+
+  padding-top: 3.4rem;
+  padding-bottom: 1.5rem;
+
+  border-top: 0.1rem solid white;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+#home h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#home .col-c .contact {
+  margin-bottom: -2.5rem;
+}
+
+#home .col-c a {
+  color: white;
+}
+
+#home .col-c a i {
+  font-size: 2.5rem;
+}
+
+#home .social-media {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12.2rem;
+}
+
+/*========Footer==========*/
+footer h3 {
+  padding-block: 2.3rem;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
